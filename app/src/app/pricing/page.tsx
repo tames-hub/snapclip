@@ -85,7 +85,7 @@ export default function PricingPage() {
             크레딧 충전제
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-6 text-balance text-gray-900">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-6 text-balance text-gray-900">
             필요한 만큼만,
             <br />
             <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">

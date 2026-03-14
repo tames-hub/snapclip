@@ -76,7 +76,7 @@ export default function Home() {
           </div>
           
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight mb-8 text-balance text-gray-900">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight mb-6 sm:mb-8 text-balance text-gray-900">
             상품 사진 한 장이면,
             <br />
             <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">15초 숏폼 광고</span>
@@ -84,7 +84,7 @@ export default function Home() {
             <span className="text-gray-600">가 나온다</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto text-balance leading-relaxed">
+          <p className="text-base sm:text-xl md:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto text-balance leading-relaxed">
             사진 업로드부터 완성까지 <span className="text-gray-900 font-semibold">단 30초</span>.
             <br />
             AI가 만드는 프로급 상품 영상을 경험하세요.
@@ -115,9 +115,9 @@ export default function Home() {
 
           {/* Preview - Real Video Demos */}
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Sweater Demo */}
-              <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200">
+              <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200 hidden md:block">
                 <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
                   <video
                     src="/demos/sweater-shorts-lite.mp4"
@@ -133,8 +133,8 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Jeans Demo */}
-              <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200 md:scale-105">
+              {/* Jeans Demo - Always visible */}
+              <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200 md:scale-105 max-w-[280px] mx-auto md:max-w-none">
                 <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
                   <video
                     src="/demos/jeans-shorts-lite.mp4"
@@ -154,7 +154,7 @@ export default function Home() {
               </div>
 
               {/* Trench Coat Demo */}
-              <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200">
+              <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200 hidden md:block">
                 <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
                   <video
                     src="/demos/trench-shorts-lite.mp4"
@@ -178,17 +178,17 @@ export default function Home() {
       {/* Social Proof */}
       <section className="px-4 py-16 bg-white border-y border-gray-200">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-3 gap-8 text-center">
-            <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
-              <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent mb-2">1,000+</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 text-center">
+            <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-200">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent mb-2">1,000+</p>
               <p className="text-sm text-gray-600">셀러가 사용 중</p>
             </div>
-            <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
-              <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent mb-2">50,000+</p>
+            <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-200">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent mb-2">50,000+</p>
               <p className="text-sm text-gray-600">생성된 영상</p>
             </div>
-            <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
-              <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent mb-2">4.9 ⭐</p>
+            <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-200">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent mb-2">4.9 ⭐</p>
               <p className="text-sm text-gray-600">평균 만족도</p>
             </div>
           </div>
@@ -196,10 +196,10 @@ export default function Home() {
       </section>
 
       {/* Demo: Before → After */}
-      <section id="demo" className="px-4 py-24 md:py-32 bg-white">
+      <section id="demo" className="px-4 py-16 md:py-24 lg:py-32 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">이렇게 변합니다</h2>
+          <div className="text-center mb-8 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-gray-900">이렇게 변합니다</h2>
             <p className="text-gray-600 text-lg">상품 사진 한 장 → AI 숏폼 영상</p>
           </div>
           
@@ -242,10 +242,10 @@ export default function Home() {
       </section>
 
       {/* Process */}
-      <section className="px-4 py-24 md:py-32 bg-gray-50">
+      <section className="px-4 py-16 md:py-24 lg:py-32 bg-gray-50">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">어떻게 만들어지나요?</h2>
+          <div className="text-center mb-8 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-gray-900">어떻게 만들어지나요?</h2>
             <p className="text-gray-600 text-lg">세 단계면 충분합니다</p>
           </div>
           
@@ -276,10 +276,10 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section className="px-4 py-24 md:py-32 bg-white">
+      <section className="px-4 py-16 md:py-24 lg:py-32 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">크레딧 충전</h2>
+          <div className="text-center mb-8 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-gray-900">크레딧 충전</h2>
             <p className="text-gray-600 text-lg">필요한 만큼만 충전하세요 • 1크레딧 = 1영상</p>
           </div>
           
@@ -344,10 +344,10 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="px-4 py-24 md:py-32 bg-gray-50">
+      <section className="px-4 py-16 md:py-24 lg:py-32 bg-gray-50">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">자주 묻는 질문</h2>
+          <div className="text-center mb-8 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-gray-900">자주 묻는 질문</h2>
             <p className="text-gray-600 text-lg">궁금한 점이 있으신가요?</p>
           </div>
           
@@ -366,7 +366,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="px-4 py-24 md:py-32 text-center bg-gradient-to-r from-pink-50 to-purple-50">
+      <section className="px-4 py-16 md:py-24 lg:py-32 text-center bg-gradient-to-r from-pink-50 to-purple-50">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
             지금 바로 <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">시작</span>하세요

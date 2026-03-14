@@ -379,7 +379,7 @@ export default function CreatePage() {
               {errors.images && <p className="text-red-500 text-sm mt-2">⚠️ {errors.images}</p>}
               
               {images.length > 0 && (
-                <div className="grid grid-cols-5 gap-2 mt-4">
+                <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 mt-4">
                   {images.map((img, i) => (
                     <div key={i} className="relative aspect-square rounded-xl overflow-hidden bg-white border border-gray-200 group">
                       <img src={img.preview} alt={`상품 이미지 ${i + 1}`} className="w-full h-full object-cover" />
@@ -456,7 +456,7 @@ export default function CreatePage() {
                 <h2 className="text-lg font-semibold text-gray-900">템플릿 & 비율</h2>
               </div>
               
-              <div className="grid grid-cols-3 gap-3 mb-6" role="radiogroup" aria-label="템플릿">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6" role="radiogroup" aria-label="템플릿">
                 {templates.map((t) => (
                   <button
                     key={t.id}
