@@ -6,9 +6,9 @@ export default function Home() {
   ];
 
   const demos = [
-    { category: "패션", product: "올리브 니트 스웨터", beforeImg: "/demos/sweater-original.png", video: "/demos/sweater-shorts.mp4" },
-    { category: "패션", product: "라이트워시 데님", beforeImg: "/demos/jeans-original.png", video: "/demos/jeans-shorts.mp4" },
-    { category: "패션", product: "트렌치코트", beforeImg: "/demos/trench-original.png", video: "/demos/trench-shorts.mp4" },
+    { category: "패션", product: "올리브 니트 스웨터", beforeImg: "/demos/sweater-original.png", video: "/demos/sweater-shorts-lite.mp4" },
+    { category: "패션", product: "라이트워시 데님", beforeImg: "/demos/jeans-original.png", video: "/demos/jeans-shorts-lite.mp4" },
+    { category: "패션", product: "트렌치코트", beforeImg: "/demos/trench-original.png", video: "/demos/trench-shorts-lite.mp4" },
   ];
 
   const plans = [
@@ -120,7 +120,7 @@ export default function Home() {
               <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200">
                 <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
                   <video
-                    src="/demos/sweater-shorts.mp4"
+                    src="/demos/sweater-shorts-lite.mp4"
                     autoPlay
                     loop
                     muted
@@ -137,7 +137,7 @@ export default function Home() {
               <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200 md:scale-105">
                 <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
                   <video
-                    src="/demos/jeans-shorts.mp4"
+                    src="/demos/jeans-shorts-lite.mp4"
                     autoPlay
                     loop
                     muted
@@ -157,7 +157,7 @@ export default function Home() {
               <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200">
                 <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
                   <video
-                    src="/demos/trench-shorts.mp4"
+                    src="/demos/trench-shorts-lite.mp4"
                     autoPlay
                     loop
                     muted
