@@ -8,3 +8,9 @@ server/.env
 app/.env.local
 server/node_modules/
 app/node_modules/
+
+# Hero video build artifacts
+hero-video/frames/
+hero-video/anim-frames/
+hero-video/*.mp4
+hero-video/scene*.mp4
