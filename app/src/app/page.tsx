@@ -113,64 +113,58 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Preview - Real Video Demos */}
+          {/* Preview - Phone Mockup with Demo Video */}
           <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Sweater Demo */}
-              <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200 hidden md:block">
-                <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
-                  <video
-                    src="/demos/sweater-shorts-lite.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                    <span className="text-xs font-semibold px-2 py-1 rounded-full bg-white/20 text-white backdrop-blur-sm">니트 스웨터</span>
+            <div className="flex items-center justify-center gap-4 md:gap-8">
+              {/* Left - Result video (desktop only) */}
+              <div className="hidden md:block w-48 shrink-0">
+                <div className="bg-white rounded-2xl p-3 shadow-lg border border-gray-200 transform -rotate-3 hover:rotate-0 transition-transform">
+                  <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
+                    <video src="/demos/sweater-shorts-lite.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3">
+                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white/20 text-white backdrop-blur-sm">니트 스웨터</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Jeans Demo - Always visible */}
-              <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200 md:scale-105 max-w-[280px] mx-auto md:max-w-none">
-                <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
-                  <video
-                    src="/demos/jeans-shorts-lite.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                    <span className="text-xs font-semibold px-2 py-1 rounded-full bg-white/20 text-white backdrop-blur-sm">데님 진</span>
+              {/* Center - Phone mockup with usage demo */}
+              <div className="relative mx-auto max-w-[280px] sm:max-w-[300px] md:max-w-[320px]">
+                {/* Phone frame */}
+                <div className="relative bg-gray-900 rounded-[2.5rem] p-3 shadow-2xl ring-1 ring-gray-800">
+                  {/* Notch */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-gray-900 rounded-b-2xl z-10" />
+                  {/* Screen */}
+                  <div className="relative aspect-[9/16] rounded-[2rem] overflow-hidden bg-gray-100">
+                    <video
+                      src="/demos/hero-demo.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="absolute top-3 right-3 px-2 py-1 rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white text-[10px] font-bold">
-                    AI 생성
-                  </div>
+                </div>
+                {/* Floating badge */}
+                <div className="absolute -top-3 -right-3 px-3 py-1.5 rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white text-xs font-bold shadow-lg">
+                  사용법 데모
                 </div>
               </div>
 
-              {/* Trench Coat Demo */}
-              <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-200 hidden md:block">
-                <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
-                  <video
-                    src="/demos/trench-shorts-lite.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                    <span className="text-xs font-semibold px-2 py-1 rounded-full bg-white/20 text-white backdrop-blur-sm">트렌치코트</span>
+              {/* Right - Result video (desktop only) */}
+              <div className="hidden md:block w-48 shrink-0">
+                <div className="bg-white rounded-2xl p-3 shadow-lg border border-gray-200 transform rotate-3 hover:rotate-0 transition-transform">
+                  <div className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gray-100">
+                    <video src="/demos/trench-shorts-lite.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3">
+                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white/20 text-white backdrop-blur-sm">트렌치코트</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <p className="text-center text-sm text-gray-500 mt-6">↑ 실제 SnapClip으로 생성된 영상입니다</p>
+            <p className="text-center text-sm text-gray-500 mt-6">↑ 실제 SnapClip 사용 화면 + AI 생성 결과물</p>
           </div>
         </div>
       </section>
